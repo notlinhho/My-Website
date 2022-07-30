@@ -111,3 +111,8 @@ ing {
     width: 400px;
 }
 
+.section__description--para {
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
