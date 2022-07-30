@@ -67,19 +67,26 @@ li {
 .row {
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+#about, 
+#discord, 
+#contact,
+footer{
+    padding: 48px 0;
+}
 /* 
 
 ABOUT
 
 */
 
-#about {
-    padding: 48px 0;
+#about{
+    background-color: #f8ffdc;
 }
 
 h2{
@@ -106,13 +113,83 @@ ing {
     width: 60%;
 }
 
+/* doing this will allow you to change the padding size in one place (makes it efficient), can add two class in one */
+.about__ing--wrapper,
+.section__description--wrapper {
+    padding: 0 24px;
+}
+.section__description--para {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
 /* make laptop smaller */
 .laptop {
     width: 400px;
 }
 
-.section__description--para {
-    font-size: 50px;
-    line-height: 1.5;
+/* 
+
+DISCORD
+
+*/
+
+#discord {
+    background-color: #cefeff;
+}
+
+/* resize discord image */
+.discordface {
+    width: 500px;
+}
+
+/* 
+
+CONTACT
+
+*/
+
+#contact {
+    background-color: #dce9ff;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea {
     margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/* 
+
+CONTACT
+
+*/
+
+footer {
+    background-color:  #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+.footer__links {
+    margin-bottom: 32px;
+}
+
+.footer__link{
+    padding: 0 16px;
 }
